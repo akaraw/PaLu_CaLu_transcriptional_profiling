@@ -10,4 +10,4 @@ cat orthologs.m8 | awk '$3 < 1e-05 {print $1"\t"$2}' > orthologs.tsv
 python deduplicate.py orthologs.tsv final_orthologs.tsv
 python deduplicate2.py final_orthologs.tsv orthololist_human_vs_bat.tsv
 
-
+python replace_values.py ../RNAseq_pipeline/palecto/htseq/ orthololist_human_vs_bat.tsv
