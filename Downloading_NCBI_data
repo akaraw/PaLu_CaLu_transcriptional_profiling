@@ -1,0 +1,2 @@
+datasets download genome accession GCF_000325575.1 --include gtf,protein,genome --filename GCF_000325575.1.zip #Download P alecto genome/proteome/gtf
+datasets download genome accession GCF_000001405.40 --include gtf,protein,genome --filename GCF_000001405.40.zip #Download human genome/proteome/gtf
