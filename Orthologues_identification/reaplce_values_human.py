@@ -9,7 +9,7 @@ def replace_values(htseq_dir, orthotsv_bat):
             if line.startswith("_"):
                 continue
             values = line.strip().split()
-            replace_dict[values[0]] = values[0]
+            replace_dict[values[3]] = values[1]
 
     folder_path =htseq_dir
 
@@ -27,7 +27,7 @@ def replace_values(htseq_dir, orthotsv_bat):
                         else:
                             values = line.strip().split()
                             if values[0] in replace_dict:
-                                values[0] = replace_dict[values[0]]
+                                values[0] = replace_dict[values[1]]
                             else:
                                 continue
                             f2.write("\t".join(values) + "\n")
